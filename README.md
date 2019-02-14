@@ -18,7 +18,7 @@ Publish Queue information is only accessible via the database (`dbo.PublishQueue
 * Source Database
 * Target Database
 
-There may be a discrepency in the publish queue totals between the _Publish Queue Stats_ page and this report. This is because Sitecore uses two different methods for loading publish queue information (you need to go deep into the Sitecore SQL DataProvider classes in Sitecore.Kernel.dll to disgest this). In short, this report uses the same pipeline processor methods that Incremental Publishing uses.
+There may be a discrepency in the publish queue totals between the _Publish Queue Stats_ page and this report. This is because Sitecore uses two different methods for loading publish queue information (you need to go deep into the Sitecore SQL DataProvider classes in Sitecore.Kernel.dll to digest this). In short, this report uses the same pipeline processor methods that Incremental Publishing uses.
 
 ## Requirements
 
