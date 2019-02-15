@@ -88,8 +88,17 @@
 		}
 		
 		litOutput.Text = model.Count.ToString();
-		rptReport.DataSource = model;
-		rptReport.DataBind();
+
+		if (model.Count > 0)
+		{
+			rptReport.DataSource = model;
+			rptReport.DataBind();
+			rptReport.Visible = true;
+		}
+		else
+		{
+			rptReport.Visible = false;
+		}
 	}
 
 	public class PublishQueueItem
@@ -129,9 +138,9 @@
 	
 		<form id="Form1" method="post" runat="server">
 		
-			<h1>Publish Queue Report</h1>
+			<h1>Publish Queue Detail</h1>
 			
-			<p><a href="/sitecore/admin">Back to Sitecore Admin</a></p>
+			<p><a href="/sitecore/admin">Sitecore Admin</a></p>
 			
 			<p>Items in publish queue: <strong><asp:Literal id="litOutput" runat="server" /></strong></p>
 			

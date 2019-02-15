@@ -9,7 +9,7 @@ The Sitecore Publish Queue Detail report is a single-file, drop-in utility for v
 
 ## Features
 
-Publish Queue information is only accessible via the database (`dbo.PublishQueue` table) or via the Sitecore API (`Sitecore.Publishing.PublishManager` class). This utility utilizes the API to generate a report of all items in the Publish Queue, and includes the following information for each item:
+Publish Queue information is only accessible via the database (`dbo.PublishQueue` table) or via the Sitecore API (`Sitecore.Publishing.PublishManager` class). This utility utilizes the API to generate a report of all items in the Publish Queue due for publishing during the next Incremental Publish, and includes the following information for each item:
 
 * ID
 * Name
@@ -18,7 +18,7 @@ Publish Queue information is only accessible via the database (`dbo.PublishQueue
 * Source Database
 * Target Database
 
-There may be a discrepency in the publish queue totals between the _Publish Queue Stats_ page and this report. This is because Sitecore uses two different methods for loading publish queue information (you need to go deep into the Sitecore SQL DataProvider classes in Sitecore.Kernel.dll to disgest this). In short, this report uses the same pipeline processor methods that Incremental Publishing uses.
+There may be a discrepency in the publish queue totals between the _Publish Queue Stats_ page and this report. This is because Sitecore uses multiple APIs for loading publish queue information (you need to go deep into the Sitecore SQL DataProvider classes in Sitecore.Kernel.dll to digest this). Keep in mind that this report displays items that are actually queued for the _next_ Incremental Publish.
 
 ## Requirements
 
