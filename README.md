@@ -22,7 +22,7 @@ There may be a discrepency in the publish queue totals between the _Publish Queu
 
 ## Requirements
 
-* Sitecore 8.0 or greater
+* Sitecore 8.2 or greater
 
 ## Getting Started
 
