@@ -14,7 +14,7 @@
 	Questions, comments, issues? Visit the repo: https://github.com/bmbruno/SitecoreSpark.Admin.PublishQueueDetail
 
 	VERSION
-	1.0.0
+	1.0.1
 
 -->
 
