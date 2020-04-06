@@ -20,7 +20,7 @@ Publish Queue information is only accessible via the database (`dbo.PublishQueue
 
 There may be a discrepency in the publish queue totals between the _Publish Queue Stats_ page and this report. This is because Sitecore uses multiple APIs for loading publish queue information (you need to go deep into the Sitecore SQL DataProvider classes in Sitecore.Kernel.dll to digest this). Keep in mind that this report displays items that are actually queued for the _next_ Incremental Publish.
 
-**Note:** this report displays items in a <strong>final workflow state</strong>. Items without any assigned workflow will not be displayed here, but may be published.
+**Note:** this report displays items in a <strong>final workflow state</strong>. Items without any assigned workflow will not be displayed on this report, but may be published.
 
 ## Requirements
 
