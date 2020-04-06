@@ -139,6 +139,8 @@
 		<form id="Form1" method="post" runat="server">
 		
 			<h1>Publish Queue Detail</h1>
+
+			<p>This report displays items in a <strong>final workflow state</strong>. Items without any assigned workflow will not be displayed, but may be published.</p>
 			
 			<p><a href="/sitecore/admin">Sitecore Admin</a></p>
 			
