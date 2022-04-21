@@ -7,6 +7,10 @@ The Sitecore Publish Queue Detail report is a single-file, drop-in utility for v
 * Current version: 1.0.1
 * About & Download: [Sitecore Publish Queue Detail (GitHub)](https://github.com/bmbruno/SitecoreSpark.Admin.PublishQueueDetail)
 
+## Maintenance Notice
+
+As of 2022, this module will be updated and maintained for all 10.x versions of Sitecore XM/XP (likely 10.3 and 10.4). This module will not support future Sitecore composable CMS products, such as Sitecore XM Cloud.
+
 ## Features
 
 Publish Queue information is only accessible via the database (`dbo.PublishQueue` table) or via the Sitecore API (`Sitecore.Publishing.PublishManager` class). This utility utilizes the API to generate a report of all items in the Publish Queue due for publishing during the next Incremental Publish, and includes the following information for each item:
